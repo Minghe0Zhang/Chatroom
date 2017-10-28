@@ -298,6 +298,16 @@ public class ChatSDKMessagesListAdapter extends BaseAdapter{
 
                 holder.txtContent.setText(message.text == null ? "ERROR" : message.text);
 
+                if(message.text.contains("6250"))
+                {
+                    holder.txtContent.setBackgroundColor(-123456789);
+
+                }
+                else
+                {
+                    holder.txtContent.setBackgroundColor(123456789);
+                }
+
                 // Show links in text view if has any.
                 holder.txtContent.setMovementMethod(LinkMovementMethod.getInstance());
                 Linkify.addLinks(holder.txtContent, Linkify.ALL);

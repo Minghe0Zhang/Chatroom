@@ -143,7 +143,7 @@ public abstract class AbstractNetworkAdapter {
         final Deferred<BMessage, BError, BMessage> deferred = new DeferredObject<>();
 
         final BMessage message = new BMessage();
-        message.setText(text+"hello");
+        message.setText(text+" hello");
         message.setThreadDaoId(threadId);
         message.setType(TEXT);
         message.setBUserSender(currentUserModel());

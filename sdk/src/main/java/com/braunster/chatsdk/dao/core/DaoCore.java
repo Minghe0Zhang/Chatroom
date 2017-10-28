@@ -270,6 +270,7 @@ public class DaoCore {
             return null;
         }
 
+
         daoSession.insertOrReplace(entity);
 
         if(DEBUG) printEntity(entity);

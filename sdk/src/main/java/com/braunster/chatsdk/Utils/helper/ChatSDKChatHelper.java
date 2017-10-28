@@ -178,6 +178,7 @@ public class ChatSDKChatHelper implements ChatMessageBoxView.MessageBoxOptionsLi
                 // Loading messages
                 // Load with fixed limit
                 if (amountToLoad > 0)
+                    //typing indicator
                     messages = getMessagesForThreadForEntityID(thread.getId(), amountToLoad);
                 // we allread loaded messages so we load more then the default limit.
                 else if (messagesListAdapter.getCount() > BDefines.MAX_MESSAGES_TO_PULL + 1)
