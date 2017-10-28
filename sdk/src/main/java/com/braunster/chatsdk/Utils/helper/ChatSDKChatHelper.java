@@ -603,7 +603,7 @@ public class ChatSDKChatHelper implements ChatMessageBoxView.MessageBoxOptionsLi
         if (StringUtils.isEmpty(text) || StringUtils.isBlank(text))
         {
             if (!uiHelper.getAlertToast().isShowing()) {
-                uiHelper.getAlertToast().setText("Cant send empty message!");
+                uiHelper.getAlertToast().setText("No one is speaking!");
                 uiHelper.getAlertToast().show();
             }
             return;

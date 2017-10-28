@@ -146,9 +146,9 @@ public class ChatMessageBoxView extends LinearLayout implements View.OnClickList
     /** Send a text message when the done button is pressed on the keyboard.*/
     @Override
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-        if (actionId == EditorInfo.IME_ACTION_SEND)
-            if (messageSendListener!=null)
-                messageSendListener.onSendPressed(getMessageText());
+//        if (actionId == EditorInfo.IME_ACTION_SEND)
+        if (messageSendListener!=null)
+            messageSendListener.onSendPressed(getMessageText());
 
         return false;
     }
