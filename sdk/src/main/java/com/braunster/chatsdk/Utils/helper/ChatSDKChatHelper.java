@@ -589,6 +589,8 @@ public class ChatSDKChatHelper implements ChatMessageBoxView.MessageBoxOptionsLi
 
 
     /** Send text message logic.*/
+
+    //second parameter: clear text after push send button
     public  void sendMessageWithText(){
         sendMessageWithText(messageBoxView.getMessageText(), true);
     }
